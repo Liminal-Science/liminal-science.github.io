@@ -1,0 +1,40 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #100f0f;
+        --text: #cecdc3;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background: #cecdc3;
+        --text: #100f0f;
+    }
+}
+
+html {
+    --fonts: "Inter", sans-serif;
+    background: var(--background);
+    color: var(--text);
+    margin: 2rem;
+    font-family: var(--fonts);
+}
+
+body {
+    margin: 1rem auto;
+    max-width: 40rem;
+    padding: 0 1rem 3rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Inter Display", var(--fonts);
+}
+
+h1.title {
+    display: block;
+    text-align: center;
+    font-weight: 900;
+    font-size: 3rem;
+}
